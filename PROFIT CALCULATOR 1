@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int X,A,B;
+    float Profit;
+    scanf("%d" , &X);
+    scanf("%d" , &A);
+    scanf("%d" , &B);
+    Profit = (X*A) - (X*B) - 100;
+    printf("Number of copies sold:%d\n" , X);
+    printf("Cost of each copy:%d\n" , A);
+    printf("Cost spent by agency on each newspaper:%d\n" , B);
+    printf("The profit obtained is Rs.%.2f\n", Profit);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
