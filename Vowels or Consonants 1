@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        int vow=0,con=0;
+        char Ch = Character.toUpperCase(ch);
+            if(Ch == 'A' || Ch == 'E' || Ch == 'I' || Ch == 'O' || Ch == 'U'){
+                System.out.println("The Character " + ch + " is Vowel");
+            }else{
+                System.out.println("The Character " + ch + " is Consonant");
+            }
+    }
+}
