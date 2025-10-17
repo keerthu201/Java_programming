@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void a(int n){
+        if(n == 0)
+            return;
+            a(n-1);
+            System.out.print(n + " ");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if(num>=1 && num<=50){
+            System.out.println("The first " + num + " Natural Numbers are:");
+            a(num);
+        }else{
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+        }
+}
